@@ -101,7 +101,7 @@ export const generarReportePDF = (data: DailyResume[]) => {
 
   let currentY = 88;
 
-  data.forEach((dia, index) => {
+  data.forEach((dia) => {
     // Si queda poco espacio en la página actual (menos de 50mm del final de página), pasamos a la siguiente hoja
     if (currentY > 240) {
       doc.addPage();
